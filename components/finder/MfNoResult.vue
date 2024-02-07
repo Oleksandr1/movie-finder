@@ -3,5 +3,4 @@
     Your search result will be here
   </div>
 </template>
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>

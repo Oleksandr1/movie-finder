@@ -1,7 +1,7 @@
 <template>
-  <el-image :class="imageClass" :src="src" :alt="alt" fit="scale-down" >
+  <el-image :class="imageClass" :src="src" :alt="alt" fit="scale-down">
     <template #error>
-      <el-skeleton-item :class="skeletonClass" variant="image"  />
+      <el-skeleton-item :class="skeletonClass" variant="image" />
     </template>
   </el-image>
 </template>
@@ -10,34 +10,33 @@ import { defineProps } from 'vue';
 const props = defineProps({
   alt: {
     type: String,
-    required: true
+    required: true,
   },
   src: {
     type: String,
-    required: true
+    required: true,
   },
   maxH: {
     type: String,
     required: false,
-    default: '450px'
+    default: '450px',
   },
   minH: {
     type: String,
     required: false,
-    default: '450px'
+    default: '450px',
   },
-  lgMaxH:{
+  lgMaxH: {
     type: String,
     required: false,
-    default: '350px'
+    default: '350px',
   },
-  w:{
+  w: {
     type: String,
     required: false,
-    default: '300px'
-  }
-}
-);
-const imageClass = `w-[${props.w}] lg:max-h-[${props.lgMaxH}] max-h-[${props.maxH}]  mx-4 my-2 rounded-xl shrink-0`
-const skeletonClass = `w-[${props.w}] min-h-[${props.minH}] `
+    default: '300px',
+  },
+});
+const imageClass = `w-[${props.w}] lg:max-h-[${props.lgMaxH}] max-h-[${props.maxH}]  mx-4 my-2 rounded-xl shrink-0`;
+const skeletonClass = `w-[${props.w}] min-h-[${props.minH}] `;
 </script>

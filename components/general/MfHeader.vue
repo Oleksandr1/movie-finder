@@ -4,13 +4,10 @@
       <h1 class="text-2xl font-semibold">MovieFinder</h1>
       <div class="flex">
         <mf-search />
-
       </div>
     </div>
   </header>
 </template>
 <script setup lang="ts">
-import { ElLoading } from 'element-plus'
-import MfSearch from "~/components/general/MfSearch.vue";
-
+import MfSearch from '~/components/general/MfSearch.vue';
 </script>
